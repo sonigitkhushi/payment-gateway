@@ -20,3 +20,8 @@ Route::get('/', function () {
 
 Route::get('phonepe',[PhonePeController::class,'phonePe']);
 Route::any('phonepe-response',[PhonePeController::class,'response'])->name('response');
+
+
+
+Route::get('/payment-link', 'PhonePeController@phonePe')->name('payment.link');
+
